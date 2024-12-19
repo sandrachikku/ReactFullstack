@@ -1,0 +1,114 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main todo container */
+.todo-app {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Header styling */
+.todo-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form and input styling */
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.todo-submit-btn {
+  width: 20%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Todo list styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.1rem;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button styling */
+.todo-delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.todo-delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .todo-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .todo-input, .todo-submit-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .todo-submit-btn {
+    margin-bottom: 0;
+  }
+}
